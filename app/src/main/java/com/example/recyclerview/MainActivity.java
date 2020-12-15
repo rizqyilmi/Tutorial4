@@ -1,6 +1,7 @@
 package com.example.recyclerview;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -41,6 +42,8 @@ public class  MainActivity extends AppCompatActivity {
         MyAdapter myAdapter = new MyAdapter();
         myAdapter.addElements(versions);
         recyclerView.setAdapter(myAdapter);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setTitle("Wikipedia Finder");
     }
 
     class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {

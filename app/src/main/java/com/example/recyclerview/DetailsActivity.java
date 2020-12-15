@@ -1,5 +1,6 @@
 package com.example.recyclerview;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -17,5 +18,10 @@ public class DetailsActivity extends AppCompatActivity {
         WebView webView = findViewById(R.id.webView);
         webView.setWebViewClient(new WebViewClient());
         webView.loadUrl(url);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setTitle("Here you go");
+        actionBar.setDisplayUseLogoEnabled(true);
+        actionBar.setDisplayShowHomeEnabled(true);
+        actionBar.setDisplayHomeAsUpEnabled(true);
     }
 }
