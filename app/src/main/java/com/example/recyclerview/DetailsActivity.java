@@ -32,6 +32,7 @@ public class DetailsActivity extends AppCompatActivity {
         return super.onCreateOptionsMenu(menu);
     }
 
+    //class for share button
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch(item.getItemId()) {
